@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #3e0271, #9f3af7);
+    color: #fff;
+    padding-top: 4%;
+    padding-left: 10%;
+}
+
+.container h1{
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.container h1 img{
+    width: 60px;
+    user-select: none;
+}
+
+.container button img{
+    width: 25px;
+    margin-left: 8px;
+}
+
+.container button{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(#9418fd,#571094);
+    color: #fff;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    margin: 30px 0 20px;
+    font-size: 16px;
+    outline: 0;
+    user-select: none;
+}
+
+.note-item{
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+}
+
+.input-box{
+    background: #fff;
+    width: 100%;
+    max-width: 500px;
+    min-height: 180px;
+    color: #333;
+    padding: 20px;
+    margin: 20px 0;
+    outline: none;
+    border-radius: 5px;
+    font-size: 20px;
+    display: flex;
+}
+
+
+
+.delete-img{
+    width: 25px;
+    position: absolute;
+    bottom: 10px;
+    right: 6px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.delete-btn{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.delete-btn:hover{
+    background: rgba(154, 160, 166, 0.157);
+    opacity: 0.87;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    min-width: 90px;
+    color: white;
+    font-size: 12px;
+    background-color: #393d40;
+    border-radius: 10px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px 8px 10px;
+    text-wrap: nowrap;
+}
+
+.hover-text:hover .tooltip-text {
+    visibility: visible;
+}
+
+.top1{
+    top: -40px;
+    left: -60%;
+}
