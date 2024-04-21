@@ -61,13 +61,14 @@ notesContainer.addEventListener('click', function(e) {
                 }
             })
         }
-        updateStorage()
     }
+    updateStorage()
 });
 
 document.addEventListener('keydown', event=>{
     if(event.key === 'Enter'){
         document.execCommand('insertLineBreak');
         event.preventDefault();
+        updateStorage()
     }
 })
