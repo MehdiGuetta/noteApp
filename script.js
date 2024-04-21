@@ -41,10 +41,7 @@ createBtn.addEventListener('click', ()=>{
     noteItem.appendChild(deleteBtn);
 
     notesContainer.appendChild(noteItem);
-
-    colorBtn.addEventListener('click', ()=>{
-        alert('done');
-    })
+    updateStorage()
 })
 
 notesContainer.addEventListener('click', function(e) {
@@ -55,6 +52,7 @@ notesContainer.addEventListener('click', function(e) {
             notesContainer.removeChild(noteItem);
             updateStorage()
         }
+        
         else if(e.target.tagName === 'P'){
             notes = document.querySelectorAll('.input-box');
             notes.forEach(nt =>{
@@ -63,5 +61,13 @@ notesContainer.addEventListener('click', function(e) {
                 }
             })
         }
+        updateStorage()
     }
 });
+
+document.addEventListener('keydown', event=>{
+    if(event.key === 'Enter'){
+        document.execCommand('insertLineBreak');
+        event.preventDefault();
+    }
+}
