@@ -11,7 +11,6 @@ function showNotes(){
     notesContainer.innerHTML = localStorage.getItem('notes');
 }
 
-showNotes()
 
 createBtn.addEventListener('click', ()=>{
     let noteItem = document.createElement('div');
@@ -72,3 +71,5 @@ document.addEventListener('keydown', event=>{
         updateStorage()
     }
 })
+
+showNotes()
